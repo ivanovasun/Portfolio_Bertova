@@ -28,6 +28,6 @@ export const projectsList = [
         description:
             'Разработка архитектуры и создание интерактивного онлайн-приглашения на свадьбу',
         link_gh: 'https://github.com/ivanovasun/BertovsWedding.git',
-        link: 'https://ivanovasun.github.io/BertovsWedding/'
+        link: 'https://ivanovasun.github.io/BertovsWedding/parents.html'
     }
 ];
