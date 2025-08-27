@@ -15,6 +15,7 @@ import ContactsUI from '../ui/Contacts/Contacts';
 import Projects from '../Projects/Projects';
 import ProjectsDetailsUI from '../ui/ProjectsDetails/ProjectsDetailsUI';
 import { Modal } from '../Modal/Modal';
+import NotFound404 from '../../pages/NotFound404/NotFound404';
 
 const App = () => {
     const location = useLocation();
@@ -57,6 +58,7 @@ const App = () => {
                         </PageContainer>
                     }
                 />
+                <Route path='*' element={<NotFound404 />} />
             </Routes>
             {/* Модальное окно для проектов */}
             {background && (

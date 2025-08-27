@@ -15,4 +15,8 @@
     --profile-img: url(../images/me2.jpg);
     --close-img: url(../images/close.svg);
     overflow-x: hidden;
+    --index: calc(1vw + 1vh);
+    --main-bck: #ff8079;
+    --sun-color: #ffee94;
+    --grey-color: #777777;
 }

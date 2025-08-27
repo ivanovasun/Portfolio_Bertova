@@ -6,7 +6,6 @@ import './index.css';
 import './styles/variables';
 import './styles/themes';
 
-
 const container = document.getElementById('root') as HTMLElement;
 const root = ReactDOMClient.createRoot(container!);
 

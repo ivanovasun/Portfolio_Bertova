@@ -1,6 +1,7 @@
 {
-    "name": "react-canonical",
+    "name": "Portfolio_Bertova",
     "version": "0.1.0",
+    "homepage": "https://ivanovasun.github.io/Portfolio_Bertova/",
     "private": true,
     "dependencies": {
         "@reduxjs/toolkit": "^2.0.1",

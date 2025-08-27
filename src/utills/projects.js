@@ -18,7 +18,7 @@ export const projectsList = [
         description_key_word: 'Онлайн форма для заполнения',
         description:
             'Адаптивная верстка сайта, позволяющего автоматически генерировать и заполнять форму для подачи заявок на гранты',
-        link_gh: `${console.log('Под NDA')}`,
+        link_gh: '#/non-existent-path',
         link: 'https://ptnigen.almazovcentre.ru/'
     },
     {

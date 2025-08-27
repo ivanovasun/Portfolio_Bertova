@@ -12,13 +12,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: 'babel-loader'
             },
-            // {
-            //     test: /\.(ts)x?$/,
-            //     exclude: /node_modules/,
-            //     use: {
-            //         loader: ['babel-loader']
-            //     }
-            // },
             {
                 test: /\.css$/,
                 exclude: /\.module\.css$/,
@@ -59,7 +52,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: './public/index.html'
-        }),
+        })
         // new Dotenv()
     ],
     resolve: {
