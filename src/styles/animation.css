@@ -1,0 +1,65 @@
+@keyframes changeColorD {
+    0% {
+        background-image: linear-gradient(
+            rgb(255, 139, 87) 0px 0.2vi,
+            #000 1.3vi
+        );
+    }
+    25% {
+        background-image: linear-gradient(rgb(255, 139, 87) 0px 1vi, #000 2vi);
+    }
+    50% {
+        background-image: linear-gradient(
+            rgb(255, 139, 87) 0px 1.5vi,
+            #000 2.9vi
+        );
+    }
+    75% {
+        background-image: linear-gradient(
+            rgb(255, 139, 87) 0px 2vi,
+            #000 3.5vi
+        );
+    }
+    100% {
+        background-image: linear-gradient(
+            rgb(255, 139, 87) 0px 4vi,
+            #000 4.5vi
+        );
+    }
+}
+
+@keyframes changeColorL {
+    0% {
+        background-image: linear-gradient(
+            var(--accent-color) 0 0.2vi,
+            #c8bbf3 1.3vi
+        );
+    }
+    25% {
+        background-image: linear-gradient(
+            var(--accent-color) 0px 1vi,
+            #c8bbf3 2vi
+        );
+    }
+    50% {
+        background-image: linear-gradient(
+            var(--accent-color) 0px 1.5vi,
+            #c8bbf3 2.9vi
+        );
+        color: #fefe;
+    }
+    75% {
+        background-image: linear-gradient(
+            var(--accent-color) 0px 2vi,
+            #c8bbf3 3.5vi
+        );
+        color: #fefe;
+    }
+    100% {
+        background-image: linear-gradient(
+            var(--accent-color) 0px 4vi,
+            #c8bbf3 4.5vi
+        );
+        color: #fefe;
+    }
+}

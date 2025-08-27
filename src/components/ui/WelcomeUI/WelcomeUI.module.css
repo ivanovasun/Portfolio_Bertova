@@ -1,0 +1,117 @@
+.header {
+    padding-block-start: 90px;
+    padding-block-end: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.6vw;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    inline-size: 100vw;
+    background-color: var(--bckg-color-accent);
+    color: var(--bckg-color);
+}
+
+.header::after {
+    content: '';
+    background-image: var(--bckg-img-cube);
+    position: absolute;
+    width: 294px;
+    height: 534px;
+    z-index: -1;
+    top: 90px;
+    right: -20px;
+    opacity: 0.4;
+}
+
+.header__title {
+    font-family: var(--accent-font), serif;
+    font-size: clamp(3.125rem, 2.5rem + 1.3889vw, 3.75rem);
+    text-align: center;
+    line-height: 5.3rem;
+    position: relative;
+}
+
+.header__title::after {
+    content: '©';
+    font-family: var(--accent-font), serif;
+    font-size: clamp(2rem, 1.1875rem + 1.8056vw, 2.8125rem);
+    position: absolute;
+    bottom: 0.85em;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header__nav__button_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: var(--main-font), sans-serif;
+    font-size: clamp(1.375rem, 1.4583rem - 0.3704vw, 1.125rem);
+    background-color: var(--arrow-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 30px;
+    inline-size: 17vw;
+    block-size: 4.5vw;
+    cursor: pointer;
+    transition: background-color 0.1s linear;
+    text-align: center;
+}
+
+.header__nav__button_link:hover {
+    background-color: var(--accent-color);
+    border: 1px solid var(--arrow-color);
+    color: var(--color-text);
+    transition: background-color 0.3s linear;
+}
+
+.header__nav__button_link:active {
+    transition: transform 0.1s linear;
+    transform: scale(0.9);
+}
+
+@media (width <= 768px) {
+    .header {
+        padding-block-end: 13.89%;
+    }
+
+    .header::after {
+        opacity: 0.3;
+    }
+
+    .header__title {
+        font-size: clamp(2.5rem, 1.875rem + 2.7778vw, 3.125rem);
+        padding: 10px;
+        line-height: 110%;
+    }
+
+    .header__title::after {
+        font-size: clamp(1.125rem, 0.25rem + 3.8889vw, 2rem);
+        bottom: 1em;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .header__nav__button_link {
+        inline-size: 147.4px;
+        block-size: 41px;
+        font-size: 18px;
+    }
+}
+
+@media (width <=375px) {
+    .header__title {
+        padding: 0;
+    }
+}

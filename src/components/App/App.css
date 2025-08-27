@@ -1,0 +1,49 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bckg-color);
+    background-image: var(--bckg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    inline-size: 100vw;
+    padding-inline: 11vw;
+    position: relative;
+    min-height: 100vh;
+}
+
+.skills__about_me {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 7.6vw;
+}
+
+@media (width <= 768px) {
+    .page {
+        padding-inline: 18.3vw;
+    }
+    .main {
+        gap: 70px;
+        padding-block-end: 60px;
+    }
+    .skills__about_me {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+}
+
+@media (width <=375px) {
+    .page {
+        padding-inline: 59px;
+    }
+    .main {
+        gap: 50px;
+        padding-block-end: 40px;
+    }
+    .skills__about_me {
+        gap: 50px;
+    }
+}

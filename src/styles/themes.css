@@ -1,0 +1,96 @@
+.page.theme_light {
+    --main-font: RalewayB;
+    --accent-font: LibreBaskerville;
+    --main-gap: 24px;
+    --color-text: #ffffff;
+    --bckg-color: #202d06;
+    --accent-color: #1c199a;
+    --bckg-projects: rgba(28, 25, 154, 0.9);
+    --bckg-color-accent: #c8bbf3;
+    --bckg-img: url(../images/bright_fon.png);
+    --bckg-img-cube: url(../images/cubs_bright.png);
+    --cube-theme: url(../images/cubetheme_active.png);
+    --cube-logo: url(../images/logo_light.png);
+    --profile-img: url(../images/me.png);
+    --arrow-color: #b2e01e;
+}
+
+.page.theme_light .header {
+    color: #fff;
+}
+
+.page.theme_light .theme-menu__button_link {
+    color: #fff;
+}
+
+.page.theme_light .header__nav__button_link {
+    background-color: #b2e01e;
+    color: #000;
+    border: 1px solid #fafafa;
+}
+
+.page.theme_light .header__nav__button_link:hover {
+    background-color: var(--accent-color);
+    border: 1px solid #b2e01e;
+    color: var(--color-text), #ffffff;
+    transition: background-color 0.3s linear;
+}
+
+.page.theme_light .main {
+    color: var(--color-text);
+}
+
+.page.theme_light .section_header {
+    color: var(--color-text);
+}
+
+.page.theme_light .wrapper {
+    backdrop-filter: blur(30px);
+}
+
+.page.theme_light .wrapper:hover {
+    background-image: linear-gradient(
+        var(--accent-color) 0px 0.2vi,
+        #c8bbf3 1.3vi
+    );
+    color: var(--accent-color);
+}
+
+.page.theme_light .about_me__quotation_img {
+    aspect-ratio: 1/1;
+}
+
+.page.theme_light .contacts_card::before {
+    color: #fefefe;
+}
+
+.page.theme_light .footer__paragraph {
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.page.theme_light .popup__wrapper {
+    background-color: rgba(28, 25, 154, 0.6);
+}
+
+.page.theme_light .popup__caption {
+    color: var(--color-text);
+}
+
+.page.theme_light .popup__function__button_open:hover {
+    background-color: rgb(200, 187, 243, 0.4);
+}
+
+.page.theme_light .popup__link_wb {
+    color: var(--color-text);
+}
+
+.page.theme_light .about-me__quotation_img {
+    max-inline-size: 73px;
+    inline-size: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.page.theme_light .wrapper-contact__animated {
+    animation: changeColorL 1s forwards;
+}

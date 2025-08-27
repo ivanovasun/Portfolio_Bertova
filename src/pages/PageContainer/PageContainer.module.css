@@ -1,0 +1,7 @@
+.main_page__display {
+    display: flex;
+    flex-direction: column;
+    gap: 109px;
+    /* padding-block-start: 90px; */
+    /* block-size: 100vh; */
+}

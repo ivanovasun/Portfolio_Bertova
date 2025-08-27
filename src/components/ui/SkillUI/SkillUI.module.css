@@ -1,0 +1,166 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 34px;
+    padding-block-end: 60px;
+    block-size: fit-content;
+}
+
+.skills__additional_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 34px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.wrapper_skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 250px;
+}
+
+.skills__paragraph {
+    font-family: var(--main-font), serif;
+    font-size: clamp(1.5625rem, 1.25rem + 0.6944vw, 1.875rem);
+    font-weight: bold;
+    inline-size: max-content;
+    align-self: start;
+    margin: 0;
+    padding: 0;
+}
+
+.skills__stec {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skills__program {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Мобильный слайдер - скрыт по умолчанию */
+.mobile_slider {
+    display: none;
+}
+
+.slider_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.slider_navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+@media (width <= 800px) {
+    .skills {
+        gap: 24px;
+        inline-size: 100%;
+        block-size: auto;
+    }
+
+    .skills__additional_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        inline-size: 70%;
+        max-width: 500px;
+    }
+
+    .skills__paragraph {
+        font-size: clamp(1.125rem, 0.6875rem + 1.9444vw, 1.5625rem);
+    }
+
+    .wrapper_skills {
+        padding: 10px;
+        inline-size: 100%;
+    }
+
+    .skills__stec {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .skills__program {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /* Скрываем обычное отображение на мобильных */
+    .skills__stec,
+    .skills__program {
+        display: none;
+    }
+
+    /* Показываем слайдер на мобильных */
+    .mobile_slider {
+        display: block;
+        width: 70%;
+    }
+
+    .slider_container {
+        min-height: 100px;
+        align-items: center;
+    }
+}
+
+@media (width <= 540px) {
+    .skills__additional_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+    }
+}
+@media (width <=375px) {
+    .skills__additional_wrapper {
+        display: flex;
+        gap: 15px;
+    }
+
+    .wrapper_skills {
+        padding: 5px 2px;
+    }
+
+    .skills__stec {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills__program {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .slider_navigation {
+        gap: 10px;
+    }
+
+    .slider_btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .slider_counter {
+        font-size: 12px;
+        min-width: 40px;
+    }
+}

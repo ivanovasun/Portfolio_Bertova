@@ -1,0 +1,104 @@
+.about_me {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-inline: 11vw;
+}
+
+.wrapper_about_me {
+    padding: 2.4vw 1.8vw 0.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_me__display {
+    display: grid;
+    grid-template-columns: minmax(0, 60%) minmax(0, 40%);
+    gap: 15px;
+}
+
+.about_me__quotation_text {
+    font-family: var(--accent-font), sans-serif;
+    font-size: clamp(1.5rem, 1.2rem + 0.6944vw, 1.8rem);
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 22px;
+}
+
+.about_me__quotation_text::before {
+    content: '"';
+    font-size: clamp(2.1rem, 1.9rem + 0.9vw, 2.8rem);
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+
+.wrapper__img__quotation {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+    align-items: center;
+}
+
+.about_me__quotation_author {
+    font-family: var(--accent-font), sans-serif;
+    font-size: clamp(0.9375rem, 0.875rem + 0.2778vw, 1.125rem);
+    font-weight: bold;
+    text-align: end;
+}
+
+.about_me__quotation_img {
+    max-inline-size: 65px;
+    inline-size: 25%;
+    aspect-ratio: 1/1.5;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-image: var(--profile-img);
+}
+
+@media (width <= 768px) {
+    .wrapper-about_me {
+        padding: 4vw 3.5vw 3.5vw;
+    }
+
+    .about-me {
+        gap: 24px;
+    }
+
+    .about_me__display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_me__quotation_text {
+        font-size: clamp(1.1rem, 0.8rem + 1.1vw, 1.3rem);
+        padding-bottom: 22px;
+    }
+
+    .about_me__quotation_text::before {
+        content: '"';
+        font-size: clamp(2.1rem, 1.9rem + 0.9vw, 2.8rem);
+        position: absolute;
+        top: -10px;
+        left: -10px;
+    }
+}
+
+@media (width <=375px) {
+    .wrapper_about_me {
+        padding: 10vw 5vw;
+    }
+
+    .about_me__quotation_text {
+        padding-bottom: 20px;
+    }
+
+    .about_me__quotation_img {
+        max-inline-size: 55px;
+        aspect-ratio: 1/1;
+        inline-size: 100%;
+    }
+}

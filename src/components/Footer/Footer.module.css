@@ -1,0 +1,24 @@
+.footer {
+    background-color: rgb(255 255 255 / 0.05);
+    backdrop-filter: blur(20px);
+    inline-size: 100vw;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__paragraph {
+    font-family: var(--main-font), sans-serif;
+    font-size: clamp(1.125rem, 0.9375rem + 0.4167vw, 1.3125rem);
+    text-align: center;
+    color: var(--color-text);
+    padding-block-end: 20px;
+}
+
+@media (width <= 768px) {
+    .page.theme_light .footer__paragraph {
+        color: var(--color-text);
+        font-weight: bold;
+    }
+}

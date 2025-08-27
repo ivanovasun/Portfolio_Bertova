@@ -1,0 +1,18 @@
+:root {
+    --main-font: RalewayB;
+    --accent-font: LibreBaskerville;
+    --main-gap: 24px;
+    --color-text: #ffffff;
+    --bckg-color: #000000;
+    --accent-color: #440806;
+    --bckg-projects: rgba(117, 117, 117, 0.95);
+    --bckg-color-accent: #fff;
+    --bckg-img: url(../images/fon_chb.png);
+    --bckg-img-cube: url(../images/cubs-chb.png);
+    --cube-theme: url(../images/cubetheme_acriv_chb.png);
+    --arrow-color: #ff8b57;
+    --cube-logo: url(../images/logo_dark.png);
+    --profile-img: url(../images/me2.jpg);
+    --close-img: url(../images/close.svg);
+    overflow-x: hidden;
+}
